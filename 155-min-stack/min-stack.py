@@ -1,6 +1,6 @@
 class MinStack:
     def __init__(self):
-        self.stack = []  # we store tuples: (value, current_min)
+        self.stack = []  
 
     def push(self, val: int) -> None:
         if not self.stack:
