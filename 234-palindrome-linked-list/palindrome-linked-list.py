@@ -2,12 +2,10 @@ class Solution:
     def isPalindrome(self, head):
         slow = fast = head
         
-        # Step 1: Find middle
         while fast and fast.next:
             slow = slow.next
             fast = fast.next.next
         
-        # Step 2: Reverse second half
         prev = None
         while slow:
             temp = slow.next
@@ -15,7 +13,6 @@ class Solution:
             prev = slow
             slow = temp
         
-        # Step 3: Compare both halves
         left = head
         right = prev
         
